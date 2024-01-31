@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "non-vanilla-translation-key-leak-preventer",
+  "version": "${version}",
+  "name": "The Template",
+  "description": "A mod to prevent the server from forcing you to leak what mod you might have by exploiting translation keys and signs.",
+  "authors": [
+    {
+      "name": "Julienraptor01",
+      "contact": {
+        "homepage": "https://github.com/Julienraptor01"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://julienraptor01.github.io/",
+    "sources": "https://github.com/Julienraptor01/non-vanilla-translation-key-leak-preventer",
+    "issues": "https://github.com/Julienraptor01/non-vanilla-translation-key-leak-preventer/issues"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "icon": "assets/non-vanilla-translation-key-leak-preventer/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.julienraptor01.NonVanillaTranslationKeyLeakPreventer"
+    ]
+  },
+  "accessWidener": "non-vanilla-translation-key-leak-preventer.accesswidener",
+  "mixins": [
+    {
+      "config": "non-vanilla-translation-key-leak-preventer.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${fabricloaderversion}",
+    "minecraft": "~${mcversion}",
+    "fabric-api": ">=${fabricapiversion}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/nQHMjHZB5f",
+        "modmenu.modrinth": "",
+        "modmenu.curseforge": "",
+        "modmenu.wiki": "https://github.com/Julienraptor01/non-vanilla-translation-key-leak-preventer/wiki"
+      },
+      "update_checker": true
+    }
+  }
+}

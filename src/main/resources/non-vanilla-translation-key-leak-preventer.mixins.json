@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "package": "me.julienraptor01.mixin",
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
